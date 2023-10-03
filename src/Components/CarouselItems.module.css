@@ -1,0 +1,51 @@
+/* carousel Items */
+.carouselTittle{
+  margin-left: 10px;
+  bottom: 0% !important;
+  right: 0% !important;
+  left: 10px !important;
+  top: 40%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #535355;
+  text-align: start !important;
+  transition: 0.5s;
+  animation-name: example;
+  animation-duration: 2s;
+}
+.carouselBg {
+  background: #fff;
+  width: 30%;
+  padding: 10px 15px;
+  position: relative;
+}
+.carouselBg::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  height: 100%;
+  left: 0px;
+  width: 5px;
+  transition: 0.5s;
+  background: #e6be1e;
+  animation-name: example2;
+  /* animation-delay: 1s; */
+  animation-duration: 2s;
+}
+
+@keyframes example {
+  from {
+    top: 0%;
+  }
+  to {
+    top: 40%;
+  }
+}
+@keyframes example2 {
+  from {
+    left: -99px;
+  }
+  to {
+    left: 0px;
+  }
+}
